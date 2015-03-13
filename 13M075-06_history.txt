@@ -1,0 +1,49 @@
+===== [ History of fileset ART/13M075-06/13M075-06 ] =====
+
+
+-----[ 3.1 ]-----
+[ 2009-07-17 10:47:04 by cs ]
+R: driver ported to MDIS5
+M: change package description to MDIS5 driver
+
+-----[ 3.0 ]-----
+[ 2009-07-17 09:41:35 by cs ]
+R:1. driver was missing support for ASYNC mode
+  2. Ported to MDIS5
+M:1.a) enhance driver to support ASYNC modes
+       SYNC/ASYNC mode controlled by descriptor at init
+    b) added example m75_async
+  2.a) added support for 64bit (API, pointer casts, ...)
+    b) adapted DBG prints for 64bit pointers
+    c) tools: fix SigHandler Prototype (prepend __MAPILIB)
+    d) for backward compatibility to MDIS4 optionally define new
+       types in m75_drv.h
+
+-----[ 2.4 ]-----
+[ 2005-02-07 16:21:05 by cs ]
+Added switch M75_SUPPORT_BREAK_ABORT to all files for Break/Abort support
+
+-----[ 2.3 ]-----
+[ 2005-01-03 12:35:44 by cs ]
+included images for doxygen html documentation
+
+-----[ 2.2 ]-----
+[ 2004-12-29 19:43:10 by cs ]
+bugfixes: it happened that Tx was blocked because no EOM interrupt occurred
+Break/Abort interrupts and handling disabled.
+  This interrupt handling lead to unconsistencies between status and data FIFOs
+cosmetics in documentation
+bugfix (keep status fifo and ext fifo consistent after CRC/Framing error)
+bugfix in M75_IO_SEL SetStat (overwrote CHM bit of channel mode register)
+added M75_TEST_FM tool
+
+-----[ 2.1 ]-----
+[ 2004-08-31 13:30:35 by cs ]
+added SetStat M75_IRQ_ENABLE, enhanced Irq enable/disable handling
+bugfix (when allocating changing buffer queue)
+added some error handling in tools/examples
+
+-----[ 2.0 ]-----
+[ 2004-08-06 11:28:02 by cs ]
+Initial Revision
+

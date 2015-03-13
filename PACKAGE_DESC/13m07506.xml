@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Klaus Popp (MEN Mikro Elektronik GmbH) -->
+<!-- edited by CS (MEN Mikro Elektronik GmbH) -->
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
+	<name>13m07506</name>
+	<description>MDIS5 driver package for MEN M75 M-Module</description>
+	<date>2009-07-17</date>
+	<revision>3.1</revision>
+	<docroot>DRIVERS/MDIS_LL/M075/DOC/html/index.html</docroot>
+	<modellist>
+		<model>
+			<hwname>M75</hwname>
+			<description>Dual HDLC/SDLC Communication Controller</description>
+			<devtype>MDIS</devtype>
+			<autoid>
+				<mmoduleid>0x5346004b</mmoduleid>
+			</autoid>
+			<busif>M-Module</busif>
+		</model>
+	</modellist>
+	<settinglist>
+		<setting>
+			<name>IRQ_ENABLE</name>
+			<description>irqs must always be enabled</description>
+			<type>U_INT32</type>
+			<value>1</value>
+			<defaultvalue>0</defaultvalue>
+			<choises>
+				<choise>
+					<value>0</value>
+					<description>no</description>
+				</choise>
+				<choise>
+					<value>1</value>
+					<description>yes</description>
+				</choise>
+			</choises>
+		</setting>
+		<setting>
+			<name>ID_CHECK</name>
+			<description>Define wether M-Module ID-PROM is checked</description>
+			<type>U_INT32</type>
+			<defaultvalue>1</defaultvalue>
+			<choises>
+				<choise>
+					<value>1</value>
+					<description>enable</description>
+				</choise>
+				<choise>
+					<value>0</value>
+					<description>disable -- ignore IDPROM</description>
+				</choise>
+			</choises>
+		</setting>
+		<settingsubdir rangestart="0" rangeend="1">
+			<name>CHAN_</name>
+			<setting>
+				<name>SYNC_MODE</name>
+				<description>Default channel mode: SYNC/ASYNC</description>
+				<type>U_INT32</type>
+				<defaultvalue>1</defaultvalue>
+				<choises>
+					<choise>
+						<value>1</value>
+						<description>SYNC mode</description>
+					</choise>
+					<choise>
+						<value>0</value>
+						<description>ASYNC mode</description>
+					</choise>
+				</choises>
+			</setting>
+			<setting>
+				<name>MAX_RXFRAME_SIZE</name>
+				<description>Rx - maximum frame size to be buffered by driver</description>
+				<type>U_INT32</type>
+				<defaultvalue>0x800</defaultvalue>
+			</setting>
+			<setting>
+				<name>MAX_RXFRAME_NUM</name>
+				<description>Rx - maximum frame number to be buffered by driver</description>
+				<type>U_INT32</type>
+				<defaultvalue>0x10</defaultvalue>
+			</setting>
+			<setting>
+				<name>MAX_TXFRAME_SIZE</name>
+				<description>Tx - maximum frame size to be buffered by driver</description>
+				<type>U_INT32</type>
+				<defaultvalue>0x800</defaultvalue>
+			</setting>
+			<setting>
+				<name>MAX_TXFRAME_NUM</name>
+				<description>Tx - maximum frame number to be buffered by driver</description>
+				<type>U_INT32</type>
+				<defaultvalue>0x10</defaultvalue>
+			</setting>
+			<setting>
+				<name>ASYNC_RX_SIG_MARK</name>
+				<description>ASYNC mode: Mark where signal is to be sent to application when installed</description>
+				<type>U_INT32</type>
+				<defaultvalue>0x10</defaultvalue>
+			</setting>
+		</settingsubdir>
+	</settinglist>
+	<!-- Global software modules -->
+	<swmodulelist>
+		<swmodule internal="false">
+			<name>m75</name>
+			<description>Driver for M75</description>
+			<type>Low Level Driver</type>
+			<makefilepath>M075/DRIVER/COM/driver.mak</makefilepath>
+		</swmodule>
+		<swmodule internal="false">
+			<name>m75_simp</name>
+			<description>Example program for M75</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M075/EXAMPLE/M75_SIMP/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule internal="false">
+			<name>m75_async</name>
+			<description>Example program for M75 in async mode</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M075/EXAMPLE/M75_ASYNC/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule internal="true">
+			<name>m75_test</name>
+			<description>Test program for M75</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M075/TEST/M75_TEST/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule internal="true">
+			<name>m75_test_fm</name>
+			<description>Test program for M75 FM modes with full clock recovery !!! only with 04M075-04 HW !!!</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M075/TEST/M75_TEST_FM/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule internal="true">
+			<name>m75_endtest</name>
+			<description>Program for M75 production endtest </description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M075/TEST/M75_ENDTEST/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule internal="true">
+			<name>m75_alc</name>
+			<description>Test program for M75 - Configuration like Alcatel</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M075/TEST/M75_ALC/COM/program.mak</makefilepath>
+		</swmodule>
+	</swmodulelist>
+</package>
