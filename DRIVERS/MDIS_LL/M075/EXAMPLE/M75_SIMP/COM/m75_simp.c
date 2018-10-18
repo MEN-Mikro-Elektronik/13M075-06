@@ -48,8 +48,6 @@
  * (c) Copyright 2004 by MEN Mikro Elektronik GmbH, Nuremberg, Germany
  ****************************************************************************/
 
-static const char RCSid[]="$Id: m75_simp.c,v 1.4 2009/07/14 17:47:18 cs Exp $";
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

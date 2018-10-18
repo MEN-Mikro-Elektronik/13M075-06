@@ -52,7 +52,6 @@
  *---------------------------------------------------------------------------
  * (c) Copyright 2004 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
-/* static const char RCSid[]="$Id: m75_drv.c,v 1.5 2009/07/14 17:47:14 cs Exp $"; */
 
 #define _NO_LL_HANDLE		/* ll_defs.h: don't define LL_HANDLE struct */
 #include "m75_int.h"		/* internal include file */
@@ -253,7 +252,7 @@ static int32 M75_Init(
 										&value, "CHAN_%d/ASYNC_RX_SIG_MARK", ch)) &&
 				error != ERR_DESC_KEY_NOTFOUND)
 				return( Cleanup(llHdl,error) );
-				llHdl->chan[ch].asyRxSigWaterM = value;
+			llHdl->chan[ch].asyRxSigWaterM = value;
 		}
 		/* MAX_RXFRAME_SIZE */
 		if ((error = DESC_GetUInt32(llHdl->descHdl, FRAME_SIZE_DEF,

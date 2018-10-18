@@ -29,8 +29,6 @@
  * (c) Copyright 2009 by MEN Mikro Elektronik GmbH, Nuremberg, Germany
  ****************************************************************************/
 
-static const char RCSid[]="$Id: m75_async.c,v 1.1 2009/07/14 17:47:20 cs Exp $";
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -100,7 +98,6 @@ int main(int argc, char *argv[])
 		printf("    chanX         channel number (0..n)\n");
 		printf("    tconst        BR Gen timeconstant (hex)\n");
 		printf("    loops         numbers of packets to Xfer\n");
-		printf("\n %s\n", RCSid);
 		return(1);
 	}
 
