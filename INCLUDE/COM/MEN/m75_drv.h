@@ -14,34 +14,24 @@
  *               _LL_DRV_
  *               M75_SW
  */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: m75_drv.h,v $
- * Revision 2.5  2009/07/14 17:47:33  cs
- * R:1. driver ported to MDIS5: new 64bit compatible MDIS_API and men_typs
- *   2. driver was missing support for ASYNC data transfer modes
- *   3. Enabling receiver always included setting all other bits of R3
- * M:1. for backward compatibility to MDIS4 optionally define new types
- *   2. added register defaults for ASYNC mode
- *   3. added SetStat M75_RXEN
- *
- * Revision 2.4  2005/02/07 16:12:51  cs
- * Added switch M75_SUPPORT_BREAK_ABORT (only affects WR15_DEFAULT)
- *
- * Revision 2.3  2004/12/29 19:35:05  cs
- * cosmetics in documentation
- * WR15_DEFAULT: Break/Abort IE disabled
- *
- * Revision 2.2  2004/08/31 12:02:26  cs
- * added SetStat M75_IRQ_ENABLE and error code M75_ERR_INT_DISABLED
- * Enhanced Documentation
- *
- * Revision 2.1  2004/08/06 11:20:43  cs
- * Initial Revision
- *
+ /*
  *---------------------------------------------------------------------------
  * (c) Copyright 2004 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #ifndef _M75_DRV_H
 #define _M75_DRV_H

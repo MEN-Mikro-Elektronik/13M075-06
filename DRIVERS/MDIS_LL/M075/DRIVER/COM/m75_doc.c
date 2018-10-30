@@ -12,26 +12,24 @@
  *
  *     \switches -
  */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: m75_doc.c,v $
- * Revision 1.4  2009/07/17 09:16:41  cs
- * R: new example for asynchronous mode available
- * M: add m75_async to examples section
- *
- * Revision 1.3  2005/02/07 16:12:42  cs
- * Added documentation of preprocessor switch M75_SUPPORT_BREAK_ABORT
- *
- * Revision 1.2  2005/01/03 11:53:41  cs
- * images now displayed
- *
- * Revision 1.1  2004/08/06 11:20:20  cs
- * Initial Revision
- *
- *
+ /*
  *---------------------------------------------------------------------------
  * (c) Copyright 2004 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 /*! \mainpage
     This is the documentation of the MDIS low-level driver for the M75 module.

@@ -12,46 +12,24 @@
  *
  *     \switches _ONE_NAMESPACE_PER_DRIVER_
  */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: m75_drv.c,v $
- * Revision 1.5  2009/07/14 17:47:14  cs
- * R:1. driver was missing support for ASYNC mode
- *   2. driver used "magic" numbers for register bits
- *   3. Ported to MDIS5
- * M:1.a) parse descriptor key to detect SYNC/ASYNC mode at init
- *     b) added special initialization for ASYNC mode
- *     c) Setstat M_MK_IRQ_ENABLE: only en-/disable master interrupt
- *        leave other bits as set previously
- *   2. use bit definitions from m75_drv.h for register bits
- *      at least where the code is touched anyway
- *   3.a) added support for 64bit (API, pointer casts, ...)
- *     b) adapted DBG prints for 64bit pointers
- *     c) put all MACCESS macros in conditionals in brackets
- *
- * Revision 1.4  2004/12/29 19:34:50  cs
- * bugfixes: it happened that Tx was blocked because no EOM interrupt occurred
- * Break/Abort interrupts and handling disabled.
- * This interrupt handling lead to unconsistencies between status and data FIFOs
- * cosmetics in documentation
- *
- * Revision 1.3  2004/09/03 09:27:46  CSchuster
- * bugfix (keep status fifo and ext fifo consistent after CRC/Framing error)
- * bugfix in M75_IO_SEL SetStat (overwrote CHM bit of channel mode register)
- *
- * Revision 1.2  2004/08/31 12:06:58  cs
- * added M75_IRQ_ENABLE, enhanced Irq enable/disable handling
- * fixed M75_ResetQ (now complete queue is initialized)
- * fixed M75_RedoQ handling
- * added safety checks in SetStats
- * cosmetics in documentation
- *
- * Revision 1.1  2004/08/06 11:20:17  cs
- * Initial Revision
- *
+ /*
  *---------------------------------------------------------------------------
  * (c) Copyright 2004 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #define _NO_LL_HANDLE		/* ll_defs.h: don't define LL_HANDLE struct */
 #include "m75_int.h"		/* internal include file */
