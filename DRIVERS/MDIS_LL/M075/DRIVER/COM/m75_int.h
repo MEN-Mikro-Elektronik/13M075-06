@@ -10,30 +10,7 @@
  *
  *     Switches: -
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: m75_int.h,v $
- * Revision 1.6  2009/07/14 17:47:16  cs
- * R:1. driver used "magic numbers" for register bit settings
- *   2. DBGWRT_* in SCC_* access macros where not interrupt safe
- * M:1. add definitions for some register bits and masks
- *   2.a) changed DBGWRT macros in SCC_* access macros to IDBGWRT_*
- *     b) lowered level for debug outputs to 5-6
- *
- * Revision 1.5  2005/02/07 16:12:40  cs
- * Added switch M75_SUPPORT_BREAK_ABORT (only affects M75_WR15_EN_INT)
- *
- * Revision 1.3  2004/12/29 19:34:54  cs
- * Added define for interrupt enable in WR15
- *
- * Revision 1.2  2004/08/31 12:07:03  cs
- * write access optimized
- * added irqEnabled flag to each channel
- *
- * Revision 1.1  2004/08/06 11:20:19  cs
- * Initial Revision
- *
- *
+/*
  *---------------------------------------------------------------------------
  * (c) Copyright 2004 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
