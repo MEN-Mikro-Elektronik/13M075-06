@@ -7,19 +7,21 @@
 #    Description: makefile descriptor file for common
 #                 modules MDIS 4.0   e.g. low level driver
 #
-#---------------------------------[ History ]---------------------------------
-#
-#   $Log: driver_sw.mak,v $
-#   Revision 1.2  2005/02/07 16:12:46  cs
-#   Added switch M75_SUPPORT_BREAK_ABORT
-#
-#   Revision 1.1  2004/08/06 11:20:25  cs
-#   Initial Revision
-#
-#
 #-----------------------------------------------------------------------------
-#   (c) Copyright 2004 by MEN mikro elektronik GmbH, Nuernberg, Germany
+#   Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
 #*****************************************************************************
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=m75_sw
 
