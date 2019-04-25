@@ -1,0 +1,28 @@
+Receiver: (passive/responding part)
+#receive data, use signals, channel A
+m75_test M75_1 -c=0 -b=2 -rm [-v]
+
+#receive data, use polling, channel A, wait forever/until data is received
+m75_test M75_1 -r -c=0 -b=0x0 -w=-1 [-v]
+
+#receive data, use polling, channel A, poll every 500ms for received data
+m75_test M75_1 -r -c=0 -b=0x5 -w=500 [-v]
+
+Transmitter: (active/initiating part)
+if parameter -f is specified, if found Tx parameters are read from file.
+parameters passed with the command line have priority.
+
+#transmit data, data generated internally (count 0->framesize), channel A, 100 frames
+m75_test M75_1 -t -c=0 -b=0x1 -n=0x64 [-v]
+
+#transmit data, data from file, channel A, 32 frames
+m75_test M75_1 -t -f=x:\target\manysmallframes.tx -c=0 -b=0x1 -n=0x20
+
+
+#   Possible Baudrates are:
+#   Baudrate             Timeconstant
+#   ...                  ...
+#   64.000		         0x05
+#   115.200              0x02
+#   230.400              0x00
+

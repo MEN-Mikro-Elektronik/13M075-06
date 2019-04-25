@@ -1,0 +1,28 @@
+#test all SetStat/GetStat calls and FIFOs
+m75_test -s [-v]
+
+#test open/ID check/close
+m75_test -o
+
+Receiver:
+receive clock from transmitted Tx Clock (RTxC pin)
+if file conf.rx is found in same directory, Rx parameters are read from it
+
+#receive data, use signals, channel A, all param from conf.rx
+m75_test -rm M75_1 -c=1 [-v]
+
+#receive data, use signals, channel A, all param from conf.rx, output data to file
+m75_test -rm M75_1 -c=1 -f=x:\target\receive.rx [-v]
+
+#receive data, use polling, channel A, 64kBit/s, wait forever/until data is received
+m75_test -r M75_1 -c=1 -b=0x71 -w=-1 [-v]
+
+Transmitter:
+if parameter -f is specified, if found Tx parameters are read from file.
+parameters passed with the command line have priority.
+
+#transmit data, data generated internally (count 0->framesize), channel A, 2MBit/s, 100 frames
+m75_test M75_1 -t -c=1 -b=0x1 -n=0x64 [-v]
+
+#transmit data, data from file, channel A, 2MBit/s, 32 frames
+m75_test M75_1 -t -f=x:\target\manysmallframes.tx -c=1 -b=0x1 -n=0x20
