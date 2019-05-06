@@ -269,7 +269,7 @@ Simple example for driver usage
 Simple example for driver usage in asynchronous mode
 */
 
-/** \page dummy
+/** \page m75dummy MEN logo
   \menimages
 */
 
