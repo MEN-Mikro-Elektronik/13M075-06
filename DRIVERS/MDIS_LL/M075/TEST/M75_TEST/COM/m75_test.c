@@ -11,36 +11,23 @@
  *     Required: -
  *     Switches: -
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m75_test.c,v $
- * Revision 1.5  2009/07/14 17:47:23  cs
- * R:1. test_Rx: on first run driver did not enable receiver
- *      while IRQ_ENABLE not called
- *   2. test_Tx: test ran into full queues for slow baudrates and big frames
- *   3. Porting to MDIS5
- * M:1. replace setstat M75_SCC_REG_03 with M75_RXEN and place after IRQ_ENABLE
- *   2. increase delays for slower baudrates
- *   3.a) use MDIS_PATH for MDIS paths
- *     b) fix SigHandler Prototype (prepend __MAPILIB)
- *
- * Revision 1.4  2004/12/29 18:34:37  cs
- * cosmetics
- *
- * Revision 1.3  2004/08/31 12:11:19  cs
- * added interrupt enables
- * added some safety checks and error handling
- *
- * Revision 1.2  2004/08/10 10:10:25  cs
- * removed typo in getstat print (M75_SCC_REGS)
- *
- * Revision 1.1  2004/08/06 11:20:32  cs
- * Initial Revision
- *
- *
  *---------------------------------------------------------------------------
- * (c) Copyright 2004 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
+ * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 static char *RCSid="$Id: m75_test.c,v 1.5 2009/07/14 17:47:23 cs Exp $\n";
 

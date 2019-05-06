@@ -11,23 +11,23 @@
  *     Required: -
  *     Switches: -
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m75_alc.c,v $
- * Revision 1.3  2009/07/14 17:47:31  cs
- * R:1. Porting to MDIS5
- * M:1. use MDIS_PATH for MDIS paths
- *
- * Revision 1.2  2004/08/31 12:12:22  cs
- * added IRQ_ENABLE SetStats
- *
- * Revision 1.1  2004/08/06 11:20:40  cs
- * Initial Revision
- *
- *
  *---------------------------------------------------------------------------
- * (c) Copyright 2004 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
+ * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 static char *RCSid="$Id: m75_alc.c,v 1.3 2009/07/14 17:47:31 cs Exp $\n";
 

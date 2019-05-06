@@ -25,24 +25,24 @@
  *
  *     Required: libraries: mdis_api
  *     \switches (none)
- */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: m75_endtest.c,v $
- * Revision 1.3  2009/07/14 17:47:29  cs
- * R:1. Porting to MDIS5
- * M:1. use MDIS_PATH for MDIS paths
- *
- * Revision 1.2  2004/09/03 10:06:15  CSchuster
- * added selection of front/rear IO (parameter -r)
- * disabled local loopback mode
- *
- * Revision 1.1  2004/08/31 13:24:01  cs
- * Initial Revision
  *
  *---------------------------------------------------------------------------
- * (c) Copyright 2004 by MEN mikro elektronik GmbH, Nuernberg, Germany
+ * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 static const char RCSid[]="$Id: m75_endtest.c,v 1.3 2009/07/14 17:47:29 cs Exp $";
 
