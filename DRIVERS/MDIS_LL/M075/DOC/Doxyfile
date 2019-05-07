@@ -1,0 +1,24 @@
+@INCLUDE_PATH = $(MEN_DOXYGENTMPL)
+@INCLUDE = DoxyfileCommon
+
+PROJECT_NAME           = "M75 MDIS Driver"
+INPUT                  = ../DRIVER/COM \
+                         $(MEN_COM_INC)/MEN/m75_drv.h \
+                         ../EXAMPLE/M75_SIMP/COM/m75_simp.c \
+                         ../EXAMPLE/M75_ASYNC/COM/m75_async.c \
+                         ../TEST/M75_TEST/COM/m75_test.c \
+                         ../TEST/M75_ALC/COM/m75_alc.c \
+
+EXAMPLE_RECURSIVE      = YES
+EXAMPLE_PATH           = ../EXAMPLE
+OUTPUT_DIRECTORY       = .
+EXTRACT_ALL            = NO
+EXTRACT_STATIC         = YES
+GENERATE_HTMLHELP      = YES
+WARNINGS               = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_IF_UNDOCUMENTED   = YES
+GENERATE_HTMLHELP      = YES
+TAGFILES               = ../../../../../LIBSRC/MDIS_API/DOC/mdis_api.tag=../../../../../../LIBSRC/MDIS_API/DOC/html
+GENERATE_TAGFILE       = m75_driver.tag
+PREDEFINED             = M75_SUPPORT_BREAK_ABORT = 1
