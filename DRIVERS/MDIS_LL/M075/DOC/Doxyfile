@@ -8,6 +8,7 @@ INPUT                  = ../DRIVER/COM \
                          ../EXAMPLE/M75_ASYNC/COM/m75_async.c \
                          ../TEST/M75_TEST/COM/m75_test.c \
                          ../TEST/M75_ALC/COM/m75_alc.c \
+                         ../TEST/M75_TEST_FM/COM/m75_test_fm.c
 
 EXAMPLE_RECURSIVE      = YES
 EXAMPLE_PATH           = ../EXAMPLE
@@ -19,6 +20,6 @@ WARNINGS               = YES
 WARN_IF_DOC_ERROR      = YES
 WARN_IF_UNDOCUMENTED   = YES
 GENERATE_HTMLHELP      = YES
-TAGFILES               = ../../../../../LIBSRC/MDIS_API/DOC/mdis_api.tag=../../../../../../LIBSRC/MDIS_API/DOC/html
+TAGFILES               = ../../../../LIBSRC/MDIS_API/DOC/mdis_api.tag=../../../../../../LIBSRC/MDIS_API/DOC/html
 GENERATE_TAGFILE       = m75_driver.tag
 PREDEFINED             = M75_SUPPORT_BREAK_ABORT = 1
