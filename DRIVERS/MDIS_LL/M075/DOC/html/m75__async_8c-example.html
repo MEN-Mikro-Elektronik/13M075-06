@@ -11,7 +11,7 @@
 
 <div class="left_to_right" style="padding-top: 6px; background-color: #F0F0F0; height: 110px; border-bottom: 2px solid #D1D1D2;">
 	<!-- Titel -->
-	<img src="menlogo.gif" alt="MEN" style="float: left; height: 103px; width: 155px; margin: 0px;"></a>
+	<img src="menlogo.gif" alt="MEN" style="float: left; height: 103px; width: 155px; margin: 0px;">
 	<h1 style="margin: 0px; padding-top: 35px; padding-bottom: 0px;">M75 MDIS Driver &nbsp; </h1>
 	<h3>Example Documentation</h3>
 </div>
@@ -26,18 +26,24 @@
 <span class="comment"> ************                   M75_ASYNC                        ************</span>
 <span class="comment"> ************                                                    ************</span>
 <span class="comment"> ****************************************************************************/</span>
- <span class="comment">/*-------------------------------[ History ]--------------------------------</span>
-<span class="comment"> *</span>
-<span class="comment"> * $Log: m75_async.c,v $</span>
-<span class="comment"> * Revision 1.1  2009/07/14 17:47:20  cs</span>
-<span class="comment"> * Initial Revision</span>
-<span class="comment"> *</span>
-<span class="comment"> *</span>
+ <span class="comment">/*</span>
 <span class="comment"> *---------------------------------------------------------------------------</span>
-<span class="comment"> * (c) Copyright 2009 by MEN Mikro Elektronik GmbH, Nuremberg, Germany</span>
+<span class="comment"> * Copyright (c) 2009-2019, MEN Mikro Elektronik GmbH</span>
 <span class="comment"> ****************************************************************************/</span>
-
-<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> RCSid[]=<span class="stringliteral">"$Id: m75_async.c,v 1.1 2009/07/14 17:47:20 cs Exp $"</span>;
+<span class="comment">/*</span>
+<span class="comment">* This program is free software: you can redistribute it and/or modify</span>
+<span class="comment">* it under the terms of the GNU General Public License as published by</span>
+<span class="comment">* the Free Software Foundation, either version 2 of the License, or</span>
+<span class="comment">* (at your option) any later version.</span>
+<span class="comment">*</span>
+<span class="comment">* This program is distributed in the hope that it will be useful,</span>
+<span class="comment">* but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="comment">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="comment">* GNU General Public License for more details.</span>
+<span class="comment">*</span>
+<span class="comment">* You should have received a copy of the GNU General Public License</span>
+<span class="comment">* along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+<span class="comment">*/</span>
 
 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
@@ -71,14 +77,14 @@
 <span class="comment">/*--------------------------------------+</span>
 <span class="comment">|   PROTOTYPES                          |</span>
 <span class="comment">+--------------------------------------*/</span>
-<span class="keyword">static</span> MDIS_PATH <a name="a0"></a><a class="code" href="m75__async_8c.html#a2">setupChannel</a>(<span class="keywordtype">char</span>* dev, int32 chan, int32 tconst);
-<span class="keyword">static</span> <span class="keywordtype">void</span> <a name="a1"></a><a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="keywordtype">char</span> *info);
+<span class="keyword">static</span> MDIS_PATH <a name="a0"></a><a class="code" href="m75__async_8c.html#a1">setupChannel</a>(<span class="keywordtype">char</span>* dev, int32 chan, int32 tconst);
+<span class="keyword">static</span> <span class="keywordtype">void</span> <a name="a1"></a><a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="keywordtype">char</span> *info);
 
 
 <span class="comment">/********************************* main ************************************/</span>
-<span class="keywordtype">int</span> <a class="code" href="m75__simp_8c.html#a3">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])
+<span class="keywordtype">int</span> <a class="code" href="m75__simp_8c.html#a2">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])
 {
-    MDIS_PATH path1 = -1 , path2 = -1;
+    MDIS_PATH path1 = -1, path2 = -1;
     int32   chan1, chan2,
             tconst,
             nbrOfBytesSent,
@@ -101,7 +107,6 @@
         printf(<span class="stringliteral">"    chanX         channel number (0..n)\n"</span>);
         printf(<span class="stringliteral">"    tconst        BR Gen timeconstant (hex)\n"</span>);
         printf(<span class="stringliteral">"    loops         numbers of packets to Xfer\n"</span>);
-        printf(<span class="stringliteral">"\n%s\n"</span>, RCSid);
         <span class="keywordflow">return</span>(1);
     }
 
@@ -119,10 +124,10 @@
     <span class="comment">/*------------------------------+</span>
 <span class="comment">    |  open path and config device  |</span>
 <span class="comment">    +------------------------------*/</span>
-    <span class="keywordflow">if</span>( (path1 = <a class="code" href="m75__async_8c.html#a2">setupChannel</a>( dev1, chan1, tconst)) &lt; 0 ) {
+    <span class="keywordflow">if</span>( (path1 = <a class="code" href="m75__async_8c.html#a1">setupChannel</a>( dev1, chan1, tconst)) &lt; 0 ) {
         <span class="keywordflow">goto</span> ABORT;
     }
-    <span class="keywordflow">if</span>( (path2 = <a class="code" href="m75__async_8c.html#a2">setupChannel</a>( dev2, chan2, tconst)) &lt; 0 ) {
+    <span class="keywordflow">if</span>( (path2 = <a class="code" href="m75__async_8c.html#a1">setupChannel</a>( dev2, chan2, tconst)) &lt; 0 ) {
         <span class="keywordflow">goto</span> ABORT;
     }
 
@@ -137,7 +142,7 @@
             *bufp++ = (u_int8)(i+n);
         }
         <span class="comment">/* send frame */</span>
-        <span class="keywordflow">if</span>( (nbrOfBytesSent = M_setblock(path1,txBuffer,fSize)) != fSize ) {
+        <span class="keywordflow">if</span>( (nbrOfBytesSent = <a name="a2"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a15">M_setblock</a>(path1,txBuffer,fSize)) != fSize ) {
             error++;
         }
         printf(<span class="stringliteral">"    M_setblock() \tnbrOfBytesSent=%d\n"</span>, nbrOfBytesSent);
@@ -147,9 +152,9 @@
 
         <span class="comment">/* receive frame (sent bytes) */</span>
         <span class="keywordflow">while</span>( !error &amp;&amp; !got_data ){
-            <span class="keywordflow">if</span>( (nbrOfBytesReceived = M_getblock(path2,rxBuffer,EXT_FIFO_SIZE)) != nbrOfBytesSent ) {
+            <span class="keywordflow">if</span>( (nbrOfBytesReceived = <a name="a3"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a14">M_getblock</a>(path2,rxBuffer,EXT_FIFO_SIZE)) != nbrOfBytesSent ) {
                 syserror = UOS_ErrnoGet();
-                printf(<span class="stringliteral">"*** %s ***\n"</span>,M_errstring( syserror ) );
+                printf(<span class="stringliteral">"*** %s ***\n"</span>,<a name="a4"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/m__errstr_8c.html#a0">M_errstring</a>( syserror ) );
                 <span class="keywordflow">if</span>( syserror != ERR_SUCCESS ) {
                     error++;
                 }
@@ -210,32 +215,32 @@
 <span class="comment">    |  cleanup            |</span>
 <span class="comment">    +--------------------*/</span>
 ABORT:
-    <span class="keywordflow">if</span> ( (path1 &gt;= 0) &amp;&amp; (M_close(path1) &lt; 0) )
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"close dev1"</span>);
-    <span class="keywordflow">if</span> ( (path2 &gt;= 0) &amp;&amp; (M_close(path2) &lt; 0) )
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"close dev2"</span> );
+    <span class="keywordflow">if</span> ( (path1 &gt;= 0) &amp;&amp; (<a name="a5"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a9">M_close</a>(path1) &lt; 0) )
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"close dev1"</span>);
+    <span class="keywordflow">if</span> ( (path2 &gt;= 0) &amp;&amp; (<a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a9">M_close</a>(path2) &lt; 0) )
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"close dev2"</span> );
 
     <span class="keywordflow">return</span>(0);
 }
 
 <span class="comment">/********************************* setupChannel ******************************/</span>
-<span class="keyword">static</span> MDIS_PATH <a class="code" href="m75__async_8c.html#a2">setupChannel</a>(<span class="keywordtype">char</span>* dev, int32 chan, int32 tconst)
+<span class="keyword">static</span> MDIS_PATH <a class="code" href="m75__async_8c.html#a1">setupChannel</a>(<span class="keywordtype">char</span>* dev, int32 chan, int32 tconst)
 {
     MDIS_PATH path;
-    <a name="_a2"></a><a class="code" href="structM75__SCC__REGS__PB.html">M75_SCC_REGS_PB</a> sccregs;
-    M_SG_BLOCK msg_blk;
+    <a name="_a6"></a><a class="code" href="structM75__SCC__REGS__PB.html">M75_SCC_REGS_PB</a> sccregs;
+    <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/structM__SG__BLOCK.html">M_SG_BLOCK</a> msg_blk;
 
     <span class="comment">/*--------------------+</span>
 <span class="comment">    |  open path          |</span>
 <span class="comment">    +--------------------*/</span>
-    <span class="keywordflow">if</span>( (path = M_open(dev)) &lt; 0 ) {
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"open device"</span>);
+    <span class="keywordflow">if</span>( (path = <a name="a7"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a4">M_open</a>(dev)) &lt; 0 ) {
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"open device"</span>);
         <span class="keywordflow">return</span>(-1);
     }
 
     <span class="comment">/* channel number */</span>
-    <span class="keywordflow">if</span>( M_setstat(path, M_MK_CH_CURRENT, chan) &lt; 0 ) {
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"M_setstat M_MK_CH_CURRENT"</span>);
+    <span class="keywordflow">if</span>( <a name="a8"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a13">M_setstat</a>(path, M_MK_CH_CURRENT, chan) &lt; 0 ) {
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"M_setstat M_MK_CH_CURRENT"</span>);
         <span class="keywordflow">goto</span> ABORT;
     }
 
@@ -252,44 +257,44 @@ ABORT:
 <span class="comment">     *   115.200    |   0x0002</span>
 <span class="comment">     *   230.400    |   0x0000</span>
 <span class="comment">     */</span>
-    <span class="keywordflow">if</span>( M_setstat( path, M75_BRGEN_TCONST, tconst ) &lt; 0 ) {
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"M_setstat M75_BRGEN_TCONST"</span>);
+    <span class="keywordflow">if</span>( <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a13">M_setstat</a>( path, M75_BRGEN_TCONST, tconst ) &lt; 0 ) {
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"M_setstat M75_BRGEN_TCONST"</span>);
         <span class="keywordflow">goto</span> ABORT;
     }
 
     <span class="comment">/* enable IRQs */</span>
-    <span class="keywordflow">if</span>( M_setstat( path, M_MK_IRQ_ENABLE, 0x01 ) &lt; 0 ) {   <span class="comment">/* enable global irq */</span>
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"M_setstat M75_BRGEN_TCONST"</span>);
+    <span class="keywordflow">if</span>( <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a13">M_setstat</a>( path, M_MK_IRQ_ENABLE, 0x01 ) &lt; 0 ) {   <span class="comment">/* enable global irq */</span>
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"M_setstat M75_BRGEN_TCONST"</span>);
         <span class="keywordflow">goto</span> ABORT;
     }
-    <span class="keywordflow">if</span>( M_setstat( path, M75_IRQ_ENABLE, 0x01 ) &lt; 0 ) {    <span class="comment">/* enable channels irq */</span>
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"M_setstat M_MK_IRQ_ENABLE"</span>);
+    <span class="keywordflow">if</span>( <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a13">M_setstat</a>( path, M75_IRQ_ENABLE, 0x01 ) &lt; 0 ) {    <span class="comment">/* enable channels irq */</span>
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"M_setstat M_MK_IRQ_ENABLE"</span>);
         <span class="keywordflow">goto</span> ABORT;
     }
 
     <span class="comment">/* Rx En */</span>
-    <span class="keywordflow">if</span>( M_setstat( path, M75_RXEN, 1 ) &lt; 0 ) {
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"M_setstat M75_RXEN"</span>);
+    <span class="keywordflow">if</span>( <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a13">M_setstat</a>( path, M75_RXEN, 1 ) &lt; 0 ) {
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"M_setstat M75_RXEN"</span>);
         <span class="keywordflow">goto</span> ABORT;
     }
 
     <span class="comment">/* Tx control */</span>
-    <span class="keywordflow">if</span>( M_setstat( path, M75_SETBLOCK_TOUT, 0 ) &lt; 0 ) {
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"M_setstat M75_SETBLOCK_TOUT"</span>);
+    <span class="keywordflow">if</span>( <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a13">M_setstat</a>( path, M75_SETBLOCK_TOUT, 0 ) &lt; 0 ) {
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"M_setstat M75_SETBLOCK_TOUT"</span>);
         <span class="keywordflow">goto</span> ABORT;
     }
-    <span class="keywordflow">if</span>( M_setstat( path, M75_MAX_TXFRAME_NUM, 10 )  &lt; 0 ) {
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"M_setstat M75_MAX_TXFRAME_NUM"</span>);
+    <span class="keywordflow">if</span>( <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a13">M_setstat</a>( path, M75_MAX_TXFRAME_NUM, 10 )  &lt; 0 ) {
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"M_setstat M75_MAX_TXFRAME_NUM"</span>);
         <span class="keywordflow">goto</span> ABORT;
     }
-    <span class="keywordflow">if</span>( M_setstat( path, M75_MAX_TXFRAME_SIZE, EXT_FIFO_SIZE ) &lt; 0 ) {
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"M_setstat M75_MAX_TXFRAME_SIZE"</span>);
+    <span class="keywordflow">if</span>( <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a13">M_setstat</a>( path, M75_MAX_TXFRAME_SIZE, EXT_FIFO_SIZE ) &lt; 0 ) {
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"M_setstat M75_MAX_TXFRAME_SIZE"</span>);
         <span class="keywordflow">goto</span> ABORT;
     }
 
-    msg_blk.size = <span class="keyword">sizeof</span>(<a class="code" href="structM75__SCC__REGS__PB.html">M75_SCC_REGS_PB</a>);
-    msg_blk.data = (<span class="keywordtype">void</span> *)&amp;sccregs;
-    M_getstat(path, M75_SCC_REGS, (int32 *)&amp;msg_blk);
+    msg_blk.<a name="a9"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/structM__SG__BLOCK.html#o0">size</a> = <span class="keyword">sizeof</span>(<a class="code" href="structM75__SCC__REGS__PB.html">M75_SCC_REGS_PB</a>);
+    msg_blk.<a name="a10"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/structM__SG__BLOCK.html#o1">data</a> = (<span class="keywordtype">void</span> *)&amp;sccregs;
+    <a name="a11"></a><a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a12">M_getstat</a>(path, M75_SCC_REGS, (int32 *)&amp;msg_blk);
     printf( <span class="stringliteral">"    Current configuration of %s:%d:\n"</span>
             <span class="stringliteral">"        WR01 = 0x%02X    WR02 = 0x%02X    WR03 = 0x%02X\n"</span>
             <span class="stringliteral">"        WR04 = 0x%02X    WR05 = 0x%02X    WR06 = 0x%02X\n"</span>
@@ -297,24 +302,24 @@ ABORT:
             <span class="stringliteral">"        WR10 = 0x%02X    WR11 = 0x%02X    WR12 = 0x%02X\n"</span>
             <span class="stringliteral">"        WR13 = 0x%02X    WR14 = 0x%02X    WR15 = 0x%02X\n\n"</span>,
             dev, chan,
-            sccregs.<a name="a3"></a><a class="code" href="structM75__SCC__REGS__PB.html#o0">wr01</a>, sccregs.<a name="a4"></a><a class="code" href="structM75__SCC__REGS__PB.html#o1">wr02</a>, sccregs.<a name="a5"></a><a class="code" href="structM75__SCC__REGS__PB.html#o2">wr03</a>,
-            sccregs.<a name="a6"></a><a class="code" href="structM75__SCC__REGS__PB.html#o3">wr04</a>, sccregs.<a name="a7"></a><a class="code" href="structM75__SCC__REGS__PB.html#o4">wr05</a>, sccregs.<a name="a8"></a><a class="code" href="structM75__SCC__REGS__PB.html#o5">wr06</a>,
-            sccregs.<a name="a9"></a><a class="code" href="structM75__SCC__REGS__PB.html#o6">wr07</a>, sccregs.<a name="a10"></a><a class="code" href="structM75__SCC__REGS__PB.html#o7">wr7p</a>, sccregs.<a name="a11"></a><a class="code" href="structM75__SCC__REGS__PB.html#o8">wr09</a>,
-            sccregs.<a name="a12"></a><a class="code" href="structM75__SCC__REGS__PB.html#o9">wr10</a>, sccregs.<a name="a13"></a><a class="code" href="structM75__SCC__REGS__PB.html#o10">wr11</a>, sccregs.<a name="a14"></a><a class="code" href="structM75__SCC__REGS__PB.html#o11">wr12</a>,
-            sccregs.<a name="a15"></a><a class="code" href="structM75__SCC__REGS__PB.html#o12">wr13</a>, sccregs.<a name="a16"></a><a class="code" href="structM75__SCC__REGS__PB.html#o13">wr14</a>, sccregs.<a name="a17"></a><a class="code" href="structM75__SCC__REGS__PB.html#o14">wr15</a> );
+            sccregs.<a name="a12"></a><a class="code" href="structM75__SCC__REGS__PB.html#o0">wr01</a>, sccregs.<a name="a13"></a><a class="code" href="structM75__SCC__REGS__PB.html#o1">wr02</a>, sccregs.<a name="a14"></a><a class="code" href="structM75__SCC__REGS__PB.html#o2">wr03</a>,
+            sccregs.<a name="a15"></a><a class="code" href="structM75__SCC__REGS__PB.html#o3">wr04</a>, sccregs.<a name="a16"></a><a class="code" href="structM75__SCC__REGS__PB.html#o4">wr05</a>, sccregs.<a name="a17"></a><a class="code" href="structM75__SCC__REGS__PB.html#o5">wr06</a>,
+            sccregs.<a name="a18"></a><a class="code" href="structM75__SCC__REGS__PB.html#o6">wr07</a>, sccregs.<a name="a19"></a><a class="code" href="structM75__SCC__REGS__PB.html#o7">wr7p</a>, sccregs.<a name="a20"></a><a class="code" href="structM75__SCC__REGS__PB.html#o8">wr09</a>,
+            sccregs.<a name="a21"></a><a class="code" href="structM75__SCC__REGS__PB.html#o9">wr10</a>, sccregs.<a name="a22"></a><a class="code" href="structM75__SCC__REGS__PB.html#o10">wr11</a>, sccregs.<a name="a23"></a><a class="code" href="structM75__SCC__REGS__PB.html#o11">wr12</a>,
+            sccregs.<a name="a24"></a><a class="code" href="structM75__SCC__REGS__PB.html#o12">wr13</a>, sccregs.<a name="a25"></a><a class="code" href="structM75__SCC__REGS__PB.html#o13">wr14</a>, sccregs.<a name="a26"></a><a class="code" href="structM75__SCC__REGS__PB.html#o14">wr15</a> );
 
     <span class="keywordflow">return</span>( path );
 
 ABORT:
-    <span class="keywordflow">if</span> (M_close(path) &lt; 0)
-        <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="stringliteral">"close dev"</span>);
+    <span class="keywordflow">if</span> (<a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/mdis__api_8c.html#a9">M_close</a>(path) &lt; 0)
+        <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="stringliteral">"close dev"</span>);
     <span class="keywordflow">return</span>( -1 );
 
 } <span class="comment">/* setupChannel */</span>
 <span class="comment">/********************************* PrintError ******************************/</span>
-<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="m75__simp_8c.html#a2">PrintError</a>(<span class="keywordtype">char</span> *info)
+<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="m75__simp_8c.html#a1">PrintError</a>(<span class="keywordtype">char</span> *info)
 {
-    printf(<span class="stringliteral">"*** can't %s: %s\n"</span>, info, M_errstring(UOS_ErrnoGet()));
+    printf(<span class="stringliteral">"*** can't %s: %s\n"</span>, info, <a class="codeRef" doxygen="mdis_api.tag:../../../../../../LIBSRC/MDIS_API/DOC/html/" href="../../../../../../LIBSRC/MDIS_API/DOC/html/m__errstr_8c.html#a0">M_errstring</a>(UOS_ErrnoGet()));
 }
 
 
@@ -326,9 +331,10 @@ ABORT:
 <!-- Footer -->
 	<p class="footer">
 	Generated for M75 MDIS Driver using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2008 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 
 </body>
 </html>
+

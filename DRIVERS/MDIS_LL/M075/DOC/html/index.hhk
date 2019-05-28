@@ -14,9 +14,9 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html"><param name="Name" value="m75_async.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a4"><param name="Name" value="main"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a3"><param name="Name" value="PrintError"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a2"><param name="Name" value="setupChannel"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a3"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a2"><param name="Name" value="PrintError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a1"><param name="Name" value="setupChannel"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_BlockRead"><param name="Name" value="M75_BlockRead"></OBJECT>
   <UL>
@@ -216,8 +216,8 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html"><param name="Name" value="m75_simp.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html#a3"><param name="Name" value="main"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html#a2"><param name="Name" value="PrintError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html#a2"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html#a1"><param name="Name" value="PrintError"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_Tx"><param name="Name" value="M75_Tx"></OBJECT>
   <UL>
@@ -233,8 +233,8 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="main"><param name="Name" value="main"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a4"><param name="Name" value="m75_async.c"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html#a3"><param name="Name" value="m75_simp.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a3"><param name="Name" value="m75_async.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html#a2"><param name="Name" value="m75_simp.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="maxFrameNum"><param name="Name" value="maxFrameNum"></OBJECT>
   <UL>
@@ -246,12 +246,12 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="PrintError"><param name="Name" value="PrintError"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a3"><param name="Name" value="m75_async.c"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html#a2"><param name="Name" value="m75_simp.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a2"><param name="Name" value="m75_async.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html#a1"><param name="Name" value="m75_simp.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="setupChannel"><param name="Name" value="setupChannel"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a2"><param name="Name" value="m75_async.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html#a1"><param name="Name" value="m75_async.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="WR01_DEFAULT"><param name="Name" value="WR01_DEFAULT"></OBJECT>
   <UL>
