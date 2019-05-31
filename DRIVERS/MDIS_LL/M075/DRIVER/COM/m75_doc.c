@@ -3,8 +3,6 @@
  *        \file  m75_doc.c
  *
  *      \author  Christian.Schuster@men.de
- *        $Date: 2009/07/17 09:16:41 $
- *    $Revision: 1.4 $
  *
  *      \brief   User documentation for M75 module driver
  *

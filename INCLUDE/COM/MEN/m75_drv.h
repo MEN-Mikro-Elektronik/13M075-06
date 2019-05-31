@@ -3,8 +3,6 @@
  *        \file  m75_drv.h
  *
  *      \author  Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:33 $
- *    $Revision: 2.5 $
  *
  *       \brief  Header file for M75 driver containing
  *               M75 specific status codes and

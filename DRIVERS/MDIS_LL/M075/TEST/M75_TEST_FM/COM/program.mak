@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: Christian.Schuster@men.de
-#          $Date: 2004/12/29 19:35:00 $
-#      $Revision: 1.1 $
 #
 #    Description: makefile descriptor file for M75_TEST_FM
 #
@@ -23,8 +21,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=m75_test_fm
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13M075-06_03_02-8-gd7384ee-dirty_2019-05-28"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH= $(SW_PREFIX)M75_TEST_FM	\
+		$(SW_PREFIX)$(DEF_REVISION) \
 			$(SW_PREFIX)M75_RETURN_RX \
 
 MAK_LIBS=$(LIB_PREFIX)$(MEN_LIB_DIR)/mdis_api$(LIB_SUFFIX)    \

@@ -3,8 +3,6 @@
  *         \file m75_test_fm.c
  *
  *       \author Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:27 $
- *    $Revision: 1.2 $
  *
  *  Description: Test for M75 hardware and driver,
  *               Transmitting and Receiving frames in FM mode
@@ -32,7 +30,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static char *RCSid="$Id: m75_test_fm.c,v 1.2 2009/07/14 17:47:27 cs Exp $\n";
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -56,6 +53,8 @@ static char *RCSid="$Id: m75_test_fm.c,v 1.2 2009/07/14 17:47:27 cs Exp $\n";
 /*-----------------------------------------+
 |  DEFINES & CONST                         |
 +------------------------------------------*/
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+
 #define TEST_MAXFRAMES	500		/* Maximum number of packets for M75_test_q */
 #define EXT_FIFO_SIZE	2048	/* Size of external FIFO on M75 HW */
 #define DEFAULT_FILE	"m75_data.txt"
@@ -214,7 +213,7 @@ static void usage(void)
 			"    -f[=<filename>] optional, file with/for Data    [no]\n"
 			"    -v              verbose                         [no]\n",
 			TEST_MAXFRAMES);
-	printf("\n(c) 2004 by MEN mikro elektronik GmbH\n%s\n\n",RCSid);
+	printf("\nCopyright (c) 2004-2019, MEN Mikro Elektronik GmbH\n%s\n\n",IdentString);
 }
 
 /******************************** main **************************************
@@ -264,7 +263,7 @@ static void usage(void)
     }
 
     printf("=========================\n");
-    printf("%s", RCSid );
+    printf("%s", IdentString );
     printf("=========================\n");
     printf("welcome to the world of magic\n");
 

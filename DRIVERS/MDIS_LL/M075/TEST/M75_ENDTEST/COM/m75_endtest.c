@@ -7,8 +7,6 @@
  *         \file m75_endtest.c
  *
  *       \author Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:29 $
- *    $Revision: 1.3 $
  *
  *       \brief  Simple example program for the M75 driver
  *
@@ -44,7 +42,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static const char RCSid[]="$Id: m75_endtest.c,v 1.3 2009/07/14 17:47:29 cs Exp $";
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -55,6 +52,7 @@ static const char RCSid[]="$Id: m75_endtest.c,v 1.3 2009/07/14 17:47:29 cs Exp $
 #include <MEN/mdis_api.h>
 #include <MEN/mdis_err.h>
 #include <MEN/m75_drv.h>
+
 
 /*--------------------------------------+
 |   DEFINES                             |

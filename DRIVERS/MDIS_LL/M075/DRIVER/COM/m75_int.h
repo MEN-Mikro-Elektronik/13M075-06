@@ -3,8 +3,6 @@
  *        \file  m75_int.h
  *
  *      \author  Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:16 $
- *    $Revision: 1.6 $
  *
  *  	 \brief  Internal header file for M75 driver
  *

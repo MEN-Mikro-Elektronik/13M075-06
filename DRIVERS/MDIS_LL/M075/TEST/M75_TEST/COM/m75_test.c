@@ -3,8 +3,6 @@
  *         \file m75_test.c
  *
  *       \author Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:23 $
- *    $Revision: 1.5 $
  *
  *  Description: several tests for M75 hardware and driver
  *
@@ -29,7 +27,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static char *RCSid="$Id: m75_test.c,v 1.5 2009/07/14 17:47:23 cs Exp $\n";
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -53,6 +50,9 @@ static char *RCSid="$Id: m75_test.c,v 1.5 2009/07/14 17:47:23 cs Exp $\n";
 /*-----------------------------------------+
 |  DEFINES & CONST                         |
 +------------------------------------------*/
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+
 #define TEST_MAXFRAMES	500		/* Maximum number of packets for M75_test_q */
 #define EXT_FIFO_SIZE	2048	/* Size of external FIFO on M75 HW */
 #define DEFAULT_FILE	"m75_data.txt"
@@ -162,7 +162,7 @@ static void usage(void)
 	printf("                    and Revision & ID tests         [no]\n");
 	printf("    -v              verbose                         [no]\n");
 	printf("\n");
-	printf("(c) 2004 by MEN mikro elektronik GmbH\n%s\n\n",RCSid);
+	printf("Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH\n%s\n\n",IdentString);
 }
 
 /******************************** main **************************************
@@ -222,7 +222,7 @@ static void usage(void)
     }
 
     printf("=========================\n");
-    printf("%s", RCSid );
+    printf("%s", IdentString );
     printf("=========================\n");
     printf("welcome to the world of magic\n");
 

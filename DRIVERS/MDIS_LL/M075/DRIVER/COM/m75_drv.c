@@ -3,8 +3,6 @@
  *        \file  m75_drv.c
  *
  *      \author  Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:14 $
- *    $Revision: 1.5 $
  *
  *      \brief   Low-level driver for M75 module
  *

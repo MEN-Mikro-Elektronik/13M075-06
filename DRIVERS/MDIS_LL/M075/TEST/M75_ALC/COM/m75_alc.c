@@ -3,8 +3,6 @@
  *         \file m75_alc.c
  *
  *       \author Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:31 $
- *    $Revision: 1.3 $
  *
  *  Description: Test simulating the hardware stimulation by certain customer
  *
@@ -29,7 +27,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static char *RCSid="$Id: m75_alc.c,v 1.3 2009/07/14 17:47:31 cs Exp $\n";
 
 #include <stdio.h>
 #include <string.h>
@@ -43,6 +40,8 @@ static char *RCSid="$Id: m75_alc.c,v 1.3 2009/07/14 17:47:31 cs Exp $\n";
 #include <MEN/m75_drv.h>
 
 /* #include <MEN/dbg.h> */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  TYPEDEFS                                |
@@ -116,7 +115,7 @@ static void usage(void)
 	printf("    device        device name (M75)           [M75_1]\n");
 	printf("    -a            test channel A              [no]\n");
 	printf("\n");
-	printf("(c) 2004 by MEN mikro elektronik GmbH\n%s\n\n",RCSid);
+	printf("Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH\n%s\n\n",IdentString);
 }
 
 /******************************** main **************************************
@@ -150,7 +149,7 @@ static void usage(void)
     }
 
     printf("=========================\n");
-    printf("%s", RCSid );
+    printf("%s", IdentString );
     printf("=========================\n");
     printf("welcome to the world of magic\n");
 

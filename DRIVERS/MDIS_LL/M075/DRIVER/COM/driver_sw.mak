@@ -1,11 +1,9 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: Christian.Schuster@men.de
-#          $Date: 2005/02/07 16:12:46 $
-#      $Revision: 1.2 $
 #
 #    Description: makefile descriptor file for common
-#                 modules MDIS 4.0   e.g. low level driver
+#                 modules  e.g. low level driver
 #
 #-----------------------------------------------------------------------------
 #   Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
@@ -24,8 +22,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=m75_sw
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13M075-06_03_02-8-gd7384ee-dirty_2019-05-28"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH=$(SW_PREFIX)MAC_MEM_MAPPED	\
+		$(SW_PREFIX)$(DEF_REVISION) \
 		   $(SW_PREFIX)MAC_BYTESWAP		\
 		   $(SW_PREFIX)M75_SW			\
 		   $(SW_PREFIX)ID_SW			\

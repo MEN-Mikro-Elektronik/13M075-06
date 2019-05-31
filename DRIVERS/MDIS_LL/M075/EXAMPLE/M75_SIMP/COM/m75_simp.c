@@ -7,8 +7,6 @@
  *         \file m75_simp.c
  *
  *       \author Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:18 $
- *    $Revision: 1.4 $
  *
  *       \brief  Simple example program for the M75 driver
  *

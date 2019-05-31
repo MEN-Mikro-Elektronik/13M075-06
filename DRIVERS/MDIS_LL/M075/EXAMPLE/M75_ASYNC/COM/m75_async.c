@@ -7,8 +7,6 @@
  *         \file m75_async.c
  *
  *       \author Christian.Schuster@men.de
- *        $Date: 2009/07/14 17:47:20 $
- *    $Revision: 1.1 $
  *
  *       \brief  Simple example program for the M75 driver in ASYNC mode
  *
