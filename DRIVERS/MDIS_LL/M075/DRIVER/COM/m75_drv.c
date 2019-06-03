@@ -31,6 +31,9 @@
 
 #define _NO_LL_HANDLE		/* ll_defs.h: don't define LL_HANDLE struct */
 #include "m75_int.h"		/* internal include file */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+
 /*-----------------------------------------+
 |  DEFINES                                 |
 +-----------------------------------------*/
@@ -2551,7 +2554,7 @@ static int32 M75_Info(
  */
 static char* Ident( void )
 {
-    return( "M75 - M75 low level driver: $Id: m75_drv.c,v 1.5 2009/07/14 17:47:14 cs Exp $" );
+    return( (char*) IdentString );
 }
 
 /********************************* Cleanup *********************************/
