@@ -4,8 +4,8 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
 	<name>13m07506</name>
 	<description>MDIS5 driver package for MEN M75 M-Module</description>
-	<date>2009-07-17</date>
-	<revision>3.1</revision>
+	<date>2019-06-07</date>
+	<revision>13M075-06_03_02-11-gb6ebd1e</revision>
 	<docroot>DRIVERS/MDIS_LL/M075/DOC/html/index.html</docroot>
 	<modellist>
 		<model>
