@@ -53,14 +53,6 @@ static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 #define TEST_MAXFRAMES	500		/* Maximum number of packets for M75_test_q */
 #define EXT_FIFO_SIZE	2048	/* Size of external FIFO on M75 HW */
 
-static const int32 OFF = 0;
-static const int32 ON  = 1;
-
-static const int32 T_OK = 0;
-static const int32 T_ERROR = 1;
-
-
-
 /*-----------------------------------------+
 |  GLOBALS                                 |
 +------------------------------------------*/

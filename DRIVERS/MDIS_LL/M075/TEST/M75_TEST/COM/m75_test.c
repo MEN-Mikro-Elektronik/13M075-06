@@ -206,7 +206,7 @@ static void usage(void)
 	u_int8	verbose,
 			openclose, setget,
 			txq, tx, rx,
-			init, ch,
+			ch,
 			useSig, useFile;
     MDIS_PATH fd = 0;
 	int32	open=0, error=0, tested=0;
@@ -273,7 +273,6 @@ static void usage(void)
 	tx        = (UTL_TSTOPT("t") ? 1 : 0);
 	rx        = (UTL_TSTOPT("r") ? 1 : 0);
 	useSig    = (UTL_TSTOPT("m") ? 1 : 0);
-	init      = (UTL_TSTOPT("i") ? 1 : 0);
 	verbose	  = (UTL_TSTOPT("v") ? 1 : 0);
 
     printf("\nm75_test channel=%s \tTimeConst=0x%04X \tframes=%d \twait=%d\n"

@@ -59,11 +59,6 @@ static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 #define EXT_FIFO_SIZE	2048	/* Size of external FIFO on M75 HW */
 #define DEFAULT_FILE	"m75_data.txt"
 #define DEFAULT_BRGEN_TCONST 0x00 /* default timeconstant for BR Gen */
-static const int32 OFF = 0;
-static const int32 ON  = 1;
-
-static const int32 T_OK = 0;
-static const int32 T_ERROR = 1;
 
 /* SCC register defaults */
 #define WR01_TEST_DEFAULT		0x18	/* SCC Interrupt, Wait/Request Modes */
@@ -1135,7 +1130,7 @@ int32 m75_test_Rx(MDIS_PATH fdHdl,
 			} else if( (error == M75_ERR_RX_BREAKABORT) ||
 					   (error == M75_ERR_RX_QFULL) ||
 					   (error == M75_ERR_RX_OVERFLOW)) {
-				u_int8 errstr[32];
+				char errstr[32];
 				if(error == M75_ERR_RX_BREAKABORT )
 					strcpy( errstr, "M75_ERR_RX_BREAKABORT" );
 				else if ( error == M75_ERR_RX_QFULL )
