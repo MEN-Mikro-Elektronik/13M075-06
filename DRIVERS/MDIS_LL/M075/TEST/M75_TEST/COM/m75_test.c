@@ -57,8 +57,6 @@ static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 #define EXT_FIFO_SIZE	2048	/* Size of external FIFO on M75 HW */
 #define DEFAULT_FILE	"m75_data.txt"
 #define DEFAULT_BRGEN_TCONST 0x01 /* default timeconstant for BR Gen */
-static const int32 OFF = 0;
-static const int32 ON  = 1;
 
 static const int32 T_OK = 0;
 static const int32 T_ERROR = 1;
