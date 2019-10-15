@@ -6,11 +6,11 @@
 <UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="Cleanup"><param name="Name" value="Cleanup"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a12"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a13"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="Ident"><param name="Name" value="Ident"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a11"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a12"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__async_8c.html"><param name="Name" value="m75_async.c"></OBJECT>
   <UL>
@@ -20,15 +20,15 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_BlockRead"><param name="Name" value="M75_BlockRead"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a7"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a8"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_BlockWrite"><param name="Name" value="M75_BlockWrite"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a8"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a9"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_BreakAbortHandler"><param name="Name" value="M75_BreakAbortHandler"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a19"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a20"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_BRGEN_TCONST"><param name="Name" value="M75_BRGEN_TCONST"></OBJECT>
   <UL>
@@ -36,27 +36,27 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html"><param name="Name" value="m75_drv.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a12"><param name="Name" value="Cleanup"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a11"><param name="Name" value="Ident"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a7"><param name="Name" value="M75_BlockRead"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a8"><param name="Name" value="M75_BlockWrite"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a19"><param name="Name" value="M75_BreakAbortHandler"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a2"><param name="Name" value="M75_Exit"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a22"><param name="Name" value="M75_GetEntry"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a6"><param name="Name" value="M75_GetStat"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a10"><param name="Name" value="M75_Info"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a1"><param name="Name" value="M75_Init"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a9"><param name="Name" value="M75_Irq"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a23"><param name="Name" value="M75_IrqExtStat"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a16"><param name="Name" value="M75_IrqRx"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a18"><param name="Name" value="M75_IrqRx_Data_Async"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a17"><param name="Name" value="M75_IrqRx_Frame_Sync"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a20"><param name="Name" value="M75_RedoQ"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a21"><param name="Name" value="M75_ResetQ"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a5"><param name="Name" value="M75_SetStat"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a13"><param name="Name" value="M75_Tx"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a15"><param name="Name" value="M75_TxData_Async"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a14"><param name="Name" value="M75_TxFrame_Sync"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a13"><param name="Name" value="Cleanup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a12"><param name="Name" value="Ident"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a8"><param name="Name" value="M75_BlockRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a9"><param name="Name" value="M75_BlockWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a20"><param name="Name" value="M75_BreakAbortHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a3"><param name="Name" value="M75_Exit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a23"><param name="Name" value="M75_GetEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a7"><param name="Name" value="M75_GetStat"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a11"><param name="Name" value="M75_Info"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a2"><param name="Name" value="M75_Init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a10"><param name="Name" value="M75_Irq"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a24"><param name="Name" value="M75_IrqExtStat"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a17"><param name="Name" value="M75_IrqRx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a19"><param name="Name" value="M75_IrqRx_Data_Async"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a18"><param name="Name" value="M75_IrqRx_Frame_Sync"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a21"><param name="Name" value="M75_RedoQ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a22"><param name="Name" value="M75_ResetQ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a6"><param name="Name" value="M75_SetStat"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a14"><param name="Name" value="M75_Tx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a16"><param name="Name" value="M75_TxData_Async"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a15"><param name="Name" value="M75_TxFrame_Sync"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8h.html"><param name="Name" value="m75_drv.h"></OBJECT>
   <UL>
@@ -100,7 +100,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_Exit"><param name="Name" value="M75_Exit"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a2"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a3"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_GETBLOCK_TOUT"><param name="Name" value="M75_GETBLOCK_TOUT"></OBJECT>
   <UL>
@@ -108,19 +108,19 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_GetEntry"><param name="Name" value="M75_GetEntry"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a22"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a23"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_GetStat"><param name="Name" value="M75_GetStat"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a6"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a7"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_Info"><param name="Name" value="M75_Info"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a10"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a11"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_Init"><param name="Name" value="M75_Init"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a1"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a2"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_IO_SEL"><param name="Name" value="M75_IO_SEL"></OBJECT>
   <UL>
@@ -128,7 +128,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_Irq"><param name="Name" value="M75_Irq"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a9"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a10"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_IRQ_ENABLE"><param name="Name" value="M75_IRQ_ENABLE"></OBJECT>
   <UL>
@@ -136,19 +136,19 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_IrqExtStat"><param name="Name" value="M75_IrqExtStat"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a23"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a24"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_IrqRx"><param name="Name" value="M75_IrqRx"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a16"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a17"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_IrqRx_Data_Async"><param name="Name" value="M75_IrqRx_Data_Async"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a18"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a19"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_IrqRx_Frame_Sync"><param name="Name" value="M75_IrqRx_Frame_Sync"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a17"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a18"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_MAX_RXFRAME_NUM"><param name="Name" value="M75_MAX_RXFRAME_NUM"></OBJECT>
   <UL>
@@ -168,11 +168,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_RedoQ"><param name="Name" value="M75_RedoQ"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a20"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a21"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_ResetQ"><param name="Name" value="M75_ResetQ"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a21"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a22"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_SCC_REG_03"><param name="Name" value="M75_SCC_REG_03"></OBJECT>
   <UL>
@@ -212,7 +212,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_SetStat"><param name="Name" value="M75_SetStat"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a5"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a6"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__simp_8c.html"><param name="Name" value="m75_simp.c"></OBJECT>
   <UL>
@@ -221,15 +221,15 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_Tx"><param name="Name" value="M75_Tx"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a13"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a14"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_TxData_Async"><param name="Name" value="M75_TxData_Async"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a15"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a16"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="M75_TxFrame_Sync"><param name="Name" value="M75_TxFrame_Sync"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a14"><param name="Name" value="m75_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="m75__drv_8c.html#a15"><param name="Name" value="m75_drv.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="main"><param name="Name" value="main"></OBJECT>
   <UL>

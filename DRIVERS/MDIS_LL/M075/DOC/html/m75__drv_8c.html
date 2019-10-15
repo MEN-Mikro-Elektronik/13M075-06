@@ -27,89 +27,87 @@
 <table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a1">M75_Init</a> (DESC_SPEC *descSpec, OSS_HANDLE *osHdl, MACCESS *ma, OSS_SEM_HANDLE *devSemHdl, OSS_IRQ_HANDLE *irqHdl, <a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> **llHdlP)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a2">M75_Init</a> (DESC_SPEC *descSpec, OSS_HANDLE *osHdl, MACCESS *ma, OSS_SEM_HANDLE *devSemHdl, OSS_IRQ_HANDLE *irqHdl, <a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> **llHdlP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allocate and return low-level handle, initialize hardware. </em> <a href="#a1"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a2">M75_Exit</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> **llHdlP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allocate and return low-level handle, initialize hardware. </em> <a href="#a2"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a3">M75_Exit</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> **llHdlP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">De-initialize hardware and clean up memory. </em> <a href="#a2"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top><a name="a3" doxytag="m75_drv.c::M75_Read"></a>
-int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a3">M75_Read</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch, int32 *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">De-initialize hardware and clean up memory. </em> <a href="#a3"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a name="a4" doxytag="m75_drv.c::M75_Read"></a>
+int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a4">M75_Read</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch, int32 *value)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read a value from the device, not supported by this driver. <br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top><a name="a4" doxytag="m75_drv.c::M75_Write"></a>
-int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a4">M75_Write</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch, int32 value)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a name="a5" doxytag="m75_drv.c::M75_Write"></a>
+int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a5">M75_Write</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch, int32 value)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Write a value to the device, not supported by this driver. <br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a5">M75_SetStat</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 code, int32 ch, INT32_OR_64 value32_or_64)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a6">M75_SetStat</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 code, int32 ch, INT32_OR_64 value32_or_64)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the driver status. </em> <a href="#a5"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a6">M75_GetStat</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 code, int32 ch, INT32_OR_64 *value32_or_64P)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the driver status. </em> <a href="#a6"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a7">M75_GetStat</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 code, int32 ch, INT32_OR_64 *value32_or_64P)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the driver status. </em> <a href="#a6"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a7">M75_BlockRead</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch, void *buf, int32 size, int32 *nbrRdBytesP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the driver status. </em> <a href="#a7"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a8">M75_BlockRead</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch, void *buf, int32 size, int32 *nbrRdBytesP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read a data block from the device. </em> <a href="#a7"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a8">M75_BlockWrite</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch, void *buf, int32 size, int32 *nbrWrBytesP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read a data block from the device. </em> <a href="#a8"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a9">M75_BlockWrite</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch, void *buf, int32 size, int32 *nbrWrBytesP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Write a data block to the device. </em> <a href="#a8"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a9">M75_Irq</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Write a data block to the device. </em> <a href="#a9"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a10">M75_Irq</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Interrupt service routine. </em> <a href="#a9"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a10">M75_Info</a> (int32 infoType,...)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Interrupt service routine. </em> <a href="#a10"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a11">M75_Info</a> (int32 infoType,...)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get information about hardware and driver requirements. </em> <a href="#a10"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>char *&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a11">Ident</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get information about hardware and driver requirements. </em> <a href="#a11"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>char *&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a12">Ident</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return ident string. </em> <a href="#a11"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a12">Cleanup</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 retCode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return ident string. </em> <a href="#a12"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a13">Cleanup</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 retCode)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Close all handles, free memory and return error code. </em> <a href="#a12"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a13">M75_Tx</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Close all handles, free memory and return error code. </em> <a href="#a13"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a14">M75_Tx</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transfer a frame from the Tx queue to the Tx FIFO. </em> <a href="#a13"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a14">M75_TxFrame_Sync</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transfer a frame from the Tx queue to the Tx FIFO. </em> <a href="#a14"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a15">M75_TxFrame_Sync</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transfer a frame from the Tx queue to the Tx FIFO in synchronous mode. </em> <a href="#a14"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a15">M75_TxData_Async</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transfer a frame from the Tx queue to the Tx FIFO in synchronous mode. </em> <a href="#a15"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a16">M75_TxData_Async</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, int32 ch)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transfer data from the Tx queue to the Data Reg in async/IRQ mode. </em> <a href="#a15"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a16">M75_IrqRx</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 ch)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transfer data from the Tx queue to the Data Reg in async/IRQ mode. </em> <a href="#a16"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a17">M75_IrqRx</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 ch)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handler for Special Receive Condition Interrupts. </em> <a href="#a16"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a17">M75_IrqRx_Frame_Sync</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 ch)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handler for Special Receive Condition Interrupts. </em> <a href="#a17"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a18">M75_IrqRx_Frame_Sync</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 ch)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handler for Special Receive Condition Interrupts in SYNC modes. </em> <a href="#a17"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a18">M75_IrqRx_Data_Async</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 ch)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handler for Special Receive Condition Interrupts in SYNC modes. </em> <a href="#a18"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a19">M75_IrqRx_Data_Async</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 ch)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handler for Special Receive Condition Interrupts in ASYNC modes. </em> <a href="#a18"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a19">M75_BreakAbortHandler</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 ch)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handler for Special Receive Condition Interrupts in ASYNC modes. </em> <a href="#a19"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a20">M75_BreakAbortHandler</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 ch)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handler for Break/Abort Interrupts. </em> <a href="#a19"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a20">M75_RedoQ</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, <a class="el" href="structMQUEUE__HEAD.html">MQUEUE_HEAD</a> *compQ)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handler for Break/Abort Interrupts. </em> <a href="#a20"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a21">M75_RedoQ</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, <a class="el" href="structMQUEUE__HEAD.html">MQUEUE_HEAD</a> *compQ)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Free, allocate or reallocate memory for queue. </em> <a href="#a20"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a21">M75_ResetQ</a> (<a class="el" href="structMQUEUE__HEAD.html">MQUEUE_HEAD</a> *compQ)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Free, allocate or reallocate memory for queue. </em> <a href="#a21"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a22">M75_ResetQ</a> (<a class="el" href="structMQUEUE__HEAD.html">MQUEUE_HEAD</a> *compQ)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reset queue. </em> <a href="#a21"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a22">M75_GetEntry</a> (LL_ENTRY *drvP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reset queue. </em> <a href="#a22"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a23">M75_GetEntry</a> (LL_ENTRY *drvP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialize driver's jump table. </em> <a href="#a22"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a23">M75_IrqExtStat</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 chan)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialize driver's jump table. </em> <a href="#a23"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="m75__drv_8c.html#a24">M75_IrqExtStat</a> (<a class="el" href="structLL__HANDLE.html">LL_HANDLE</a> *llHdl, u_int32 chan)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Interrupt service routine for Ext/Status IRQs. </em> <a href="#a23"></a><em><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Interrupt service routine for Ext/Status IRQs. </em> <a href="#a24"></a><em><br><br></td></tr>
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 Low-level driver for M75 module. 
 <p>
-<dl compact><dt><b>Author:</b></dt><dd><a href="mailto:Christian.Schuster@men.de">Christian.Schuster@men.de</a> <dl compact><dt><b>Date</b></dt><dd>2009/07/14 17:47:14 </dd></dl>
-<dl compact><dt><b>Revision</b></dt><dd>1.5 </dd></dl>
-</dd></dl>
+<dl compact><dt><b>Author:</b></dt><dd><a href="mailto:Christian.Schuster@men.de">Christian.Schuster@men.de</a></dd></dl>
 <p>
 Required: OSS, DESC, DBG, ID libraries<p>
 <dl compact><dt><b>Preprocessor Switches:</b></dt><dd>_ONE_NAMESPACE_PER_DRIVER_</dd></dl>
 <hr><h2>Function Documentation</h2>
-<a name="a12" doxytag="m75_drv.c::Cleanup"></a><p>
+<a name="a13" doxytag="m75_drv.c::Cleanup"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -157,7 +155,7 @@ Close all handles, free memory and return error code.
     </td>
   </tr>
 </table>
-<a name="a11" doxytag="m75_drv.c::Ident"></a><p>
+<a name="a12" doxytag="m75_drv.c::Ident"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -189,7 +187,7 @@ Return ident string.
     </td>
   </tr>
 </table>
-<a name="a7" doxytag="m75_drv.c::M75_BlockRead"></a><p>
+<a name="a8" doxytag="m75_drv.c::M75_BlockRead"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -257,7 +255,7 @@ Read a data block from the device.
     </td>
   </tr>
 </table>
-<a name="a8" doxytag="m75_drv.c::M75_BlockWrite"></a><p>
+<a name="a9" doxytag="m75_drv.c::M75_BlockWrite"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -325,7 +323,7 @@ Write a data block to the device.
     </td>
   </tr>
 </table>
-<a name="a19" doxytag="m75_drv.c::M75_BreakAbortHandler"></a><p>
+<a name="a20" doxytag="m75_drv.c::M75_BreakAbortHandler"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -372,7 +370,7 @@ Handler for Break/Abort Interrupts.
     </td>
   </tr>
 </table>
-<a name="a2" doxytag="m75_drv.c::M75_Exit"></a><p>
+<a name="a3" doxytag="m75_drv.c::M75_Exit"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -410,7 +408,7 @@ The function deinitializes all channels by disabling the communication and the i
     </td>
   </tr>
 </table>
-<a name="a22" doxytag="m75_drv.c::M75_GetEntry"></a><p>
+<a name="a23" doxytag="m75_drv.c::M75_GetEntry"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -446,7 +444,7 @@ Initialize driver's jump table.
     </td>
   </tr>
 </table>
-<a name="a6" doxytag="m75_drv.c::M75_GetStat"></a><p>
+<a name="a7" doxytag="m75_drv.c::M75_GetStat"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -509,7 +507,7 @@ The driver supports <a class="el" href="m75__drv_8h.html#getstat_setstat_codes">
     </td>
   </tr>
 </table>
-<a name="a10" doxytag="m75_drv.c::M75_Info"></a><p>
+<a name="a11" doxytag="m75_drv.c::M75_Info"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -570,7 +568,7 @@ The LL_INFO_LOCKMODE code returns which process locking mode the driver needs (L
     </td>
   </tr>
 </table>
-<a name="a1" doxytag="m75_drv.c::M75_Init"></a><p>
+<a name="a2" doxytag="m75_drv.c::M75_Init"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -660,7 +658,7 @@ The following descriptor keys are used:<p>
     </td>
   </tr>
 </table>
-<a name="a9" doxytag="m75_drv.c::M75_Irq"></a><p>
+<a name="a10" doxytag="m75_drv.c::M75_Irq"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -699,7 +697,7 @@ The interrupt is triggered when data is received (special condition only) errors
     </td>
   </tr>
 </table>
-<a name="a23" doxytag="m75_drv.c::M75_IrqExtStat"></a><p>
+<a name="a24" doxytag="m75_drv.c::M75_IrqExtStat"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -746,7 +744,7 @@ Interrupt service routine for Ext/Status IRQs.
     </td>
   </tr>
 </table>
-<a name="a16" doxytag="m75_drv.c::M75_IrqRx"></a><p>
+<a name="a17" doxytag="m75_drv.c::M75_IrqRx"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -798,7 +796,7 @@ Handler for Special Receive Condition Interrupts.
 to be called only in M75_Irq, otherwise IrqMaskR/IrqRestore have to be put in several places     </td>
   </tr>
 </table>
-<a name="a18" doxytag="m75_drv.c::M75_IrqRx_Data_Async"></a><p>
+<a name="a19" doxytag="m75_drv.c::M75_IrqRx_Data_Async"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -850,7 +848,7 @@ Handler for Special Receive Condition Interrupts in ASYNC modes.
 to be called only in M75_Irq, otherwise IrqMaskR/IrqRestore have to be put in several places     </td>
   </tr>
 </table>
-<a name="a17" doxytag="m75_drv.c::M75_IrqRx_Frame_Sync"></a><p>
+<a name="a18" doxytag="m75_drv.c::M75_IrqRx_Frame_Sync"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -902,7 +900,7 @@ Handler for Special Receive Condition Interrupts in SYNC modes.
 to be called only in M75_Irq, otherwise IrqMaskR/IrqRestore have to be put in several places     </td>
   </tr>
 </table>
-<a name="a20" doxytag="m75_drv.c::M75_RedoQ"></a><p>
+<a name="a21" doxytag="m75_drv.c::M75_RedoQ"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -950,7 +948,7 @@ When maxFrameSize or maxFrameNum of any queue changes, this function adapts the 
     </td>
   </tr>
 </table>
-<a name="a21" doxytag="m75_drv.c::M75_ResetQ"></a><p>
+<a name="a22" doxytag="m75_drv.c::M75_ResetQ"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -987,7 +985,7 @@ Reset queue.
     </td>
   </tr>
 </table>
-<a name="a5" doxytag="m75_drv.c::M75_SetStat"></a><p>
+<a name="a6" doxytag="m75_drv.c::M75_SetStat"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1049,7 +1047,7 @@ The driver supports <a class="el" href="m75__drv_8h.html#getstat_setstat_codes">
     </td>
   </tr>
 </table>
-<a name="a13" doxytag="m75_drv.c::M75_Tx"></a><p>
+<a name="a14" doxytag="m75_drv.c::M75_Tx"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1097,7 +1095,7 @@ Enable transmitter and FIFO.<p>
     </td>
   </tr>
 </table>
-<a name="a15" doxytag="m75_drv.c::M75_TxData_Async"></a><p>
+<a name="a16" doxytag="m75_drv.c::M75_TxData_Async"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1144,7 +1142,7 @@ Transfer data from the Tx queue to the Data Reg in async/IRQ mode.
     </td>
   </tr>
 </table>
-<a name="a14" doxytag="m75_drv.c::M75_TxFrame_Sync"></a><p>
+<a name="a15" doxytag="m75_drv.c::M75_TxFrame_Sync"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1199,8 +1197,7 @@ Enable transmitter and FIFO.<p>
 <div class="footer">
 <!-- Footer -->
 	<p class="footer">
-	Generated for M75 MDIS Driver using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Generated for M75 MDIS Driver using <a href="http://www.doxygen.org">doxygen</a>. All Rights Reserved.
 	</p>
 </div>
 

@@ -40,139 +40,139 @@
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_Init</name>
-      <anchor>a1</anchor>
+      <anchor>a2</anchor>
       <arglist>(DESC_SPEC *descSpec, OSS_HANDLE *osHdl, MACCESS *ma, OSS_SEM_HANDLE *devSemHdl, OSS_IRQ_HANDLE *irqHdl, LL_HANDLE **llHdlP)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_Exit</name>
-      <anchor>a2</anchor>
+      <anchor>a3</anchor>
       <arglist>(LL_HANDLE **llHdlP)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_Read</name>
-      <anchor>a3</anchor>
+      <anchor>a4</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 ch, int32 *value)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_Write</name>
-      <anchor>a4</anchor>
+      <anchor>a5</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 ch, int32 value)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_SetStat</name>
-      <anchor>a5</anchor>
+      <anchor>a6</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 code, int32 ch, INT32_OR_64 value32_or_64)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_GetStat</name>
-      <anchor>a6</anchor>
+      <anchor>a7</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 code, int32 ch, INT32_OR_64 *value32_or_64P)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_BlockRead</name>
-      <anchor>a7</anchor>
+      <anchor>a8</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 ch, void *buf, int32 size, int32 *nbrRdBytesP)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_BlockWrite</name>
-      <anchor>a8</anchor>
+      <anchor>a9</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 ch, void *buf, int32 size, int32 *nbrWrBytesP)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_Irq</name>
-      <anchor>a9</anchor>
+      <anchor>a10</anchor>
       <arglist>(LL_HANDLE *llHdl)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_Info</name>
-      <anchor>a10</anchor>
+      <anchor>a11</anchor>
       <arglist>(int32 infoType,...)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>char *</type>
       <name>Ident</name>
-      <anchor>a11</anchor>
+      <anchor>a12</anchor>
       <arglist>(void)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>Cleanup</name>
-      <anchor>a12</anchor>
+      <anchor>a13</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 retCode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_Tx</name>
-      <anchor>a13</anchor>
-      <arglist>(LL_HANDLE *llHdl, int32 ch)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>int32</type>
-      <name>M75_TxFrame_Sync</name>
       <anchor>a14</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 ch)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
-      <name>M75_TxData_Async</name>
+      <name>M75_TxFrame_Sync</name>
       <anchor>a15</anchor>
       <arglist>(LL_HANDLE *llHdl, int32 ch)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
-      <name>M75_IrqRx</name>
+      <name>M75_TxData_Async</name>
       <anchor>a16</anchor>
-      <arglist>(LL_HANDLE *llHdl, u_int32 ch)</arglist>
+      <arglist>(LL_HANDLE *llHdl, int32 ch)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
-      <name>M75_IrqRx_Frame_Sync</name>
+      <name>M75_IrqRx</name>
       <anchor>a17</anchor>
       <arglist>(LL_HANDLE *llHdl, u_int32 ch)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
-      <name>M75_IrqRx_Data_Async</name>
+      <name>M75_IrqRx_Frame_Sync</name>
       <anchor>a18</anchor>
       <arglist>(LL_HANDLE *llHdl, u_int32 ch)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
-      <name>M75_BreakAbortHandler</name>
+      <name>M75_IrqRx_Data_Async</name>
       <anchor>a19</anchor>
       <arglist>(LL_HANDLE *llHdl, u_int32 ch)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
-      <name>M75_RedoQ</name>
+      <name>M75_BreakAbortHandler</name>
       <anchor>a20</anchor>
+      <arglist>(LL_HANDLE *llHdl, u_int32 ch)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>int32</type>
+      <name>M75_RedoQ</name>
+      <anchor>a21</anchor>
       <arglist>(LL_HANDLE *llHdl, MQUEUE_HEAD *compQ)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_ResetQ</name>
-      <anchor>a21</anchor>
+      <anchor>a22</anchor>
       <arglist>(MQUEUE_HEAD *compQ)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>M75_GetEntry</name>
-      <anchor>a22</anchor>
+      <anchor>a23</anchor>
       <arglist>(LL_ENTRY *drvP)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>M75_IrqExtStat</name>
-      <anchor>a23</anchor>
+      <anchor>a24</anchor>
       <arglist>(LL_HANDLE *llHdl, u_int32 chan)</arglist>
     </member>
   </compound>
