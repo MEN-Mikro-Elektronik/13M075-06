@@ -22,6 +22,6 @@ WARNINGS               = YES
 WARN_IF_DOC_ERROR      = YES
 WARN_IF_UNDOCUMENTED   = YES
 GENERATE_HTMLHELP      = YES
-TAGFILES               = ../../../../LIBSRC/MDIS_API/DOC/mdis_api.tag=../../../../../../LIBSRC/MDIS_API/DOC/html
+TAGFILES               = ../../../../LIBSRC/MDIS_API/DOC/mdis_api.tag=../../../../../LIBSRC/MDIS_API/DOC/html
 GENERATE_TAGFILE       = m75_driver.tag
 PREDEFINED             = M75_SUPPORT_BREAK_ABORT = 1
