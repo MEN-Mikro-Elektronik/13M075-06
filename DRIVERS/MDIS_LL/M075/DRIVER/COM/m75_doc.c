@@ -249,14 +249,6 @@
 
     \subsection m75_async  Simple example for using the driver in async mode
     m75_async.c (see example section)
-
-    \subsection m75_min   Minimum descriptor
-    m75_min.dsc
-    demonstrates the minimum set of options necessary for using the driver.
-
-    \subsection m75_max   Maximum descriptor
-    m75_max.dsc
-    shows all possible configuration options for this driver.
 */
 
 /** \example m75_simp.c
