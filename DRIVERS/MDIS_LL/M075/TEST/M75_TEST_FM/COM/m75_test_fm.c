@@ -13,7 +13,7 @@
  *     Switches: M75_TEST_FM; M75_RETURN_RX;
  *
  *---------------------------------------------------------------------------
- * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
+ * Copyright 2004-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 /*
 * This program is free software: you can redistribute it and/or modify
@@ -208,7 +208,7 @@ static void usage(void)
 			"    -f[=<filename>] optional, file with/for Data    [no]\n"
 			"    -v              verbose                         [no]\n",
 			TEST_MAXFRAMES);
-	printf("\nCopyright (c) 2004-2019, MEN Mikro Elektronik GmbH\n%s\n\n",IdentString);
+	printf("\nCopyright 2004-2019, MEN Mikro Elektronik GmbH\n%s\n\n",IdentString);
 }
 
 /******************************** main **************************************

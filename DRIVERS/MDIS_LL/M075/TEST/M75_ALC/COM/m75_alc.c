@@ -10,7 +10,7 @@
  *     Switches: -
  *
  *---------------------------------------------------------------------------
- * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
+ * Copyright 2004-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 /*
 * This program is free software: you can redistribute it and/or modify
@@ -107,7 +107,7 @@ static void usage(void)
 	printf("    device        device name (M75)           [M75_1]\n");
 	printf("    -a            test channel A              [no]\n");
 	printf("\n");
-	printf("Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH\n%s\n\n",IdentString);
+	printf("Copyright 2004-2019, MEN Mikro Elektronik GmbH\n%s\n\n",IdentString);
 }
 
 /******************************** main **************************************
